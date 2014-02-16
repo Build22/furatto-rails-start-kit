@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -14,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-gem 'furatto', path: '/Users/abrahamkuri/workspace/furatto/furatto-rails'
+gem 'furatto', github: 'IcaliaLabs/furatto-rails', branch: 'v1.0.0'
 gem 'compass-rails'
 gem 'devise'
 gem 'figaro'
@@ -38,6 +40,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
