@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-gem 'furatto', github: 'IcaliaLabs/furatto-rails', branch: 'v1.0.0'
+gem 'furatto', '~> 1.2.6'
 gem 'compass-rails'
 gem 'devise'
 gem 'figaro'
